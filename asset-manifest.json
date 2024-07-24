@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/reactProfileStatisticlsFrendList/static/css/main.7acaea2f.css",
+    "main.js": "/reactProfileStatisticlsFrendList/static/js/main.07d3183d.js",
+    "index.html": "/reactProfileStatisticlsFrendList/index.html",
+    "main.7acaea2f.css.map": "/reactProfileStatisticlsFrendList/static/css/main.7acaea2f.css.map",
+    "main.07d3183d.js.map": "/reactProfileStatisticlsFrendList/static/js/main.07d3183d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.07d3183d.js"
+  ]
+}
