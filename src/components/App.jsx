@@ -18,7 +18,8 @@ export const App = () => {
   return (
     <div style={Layout}>
       <User profile={user} />
-      <Statistics data={data} title={title}/>
+    <Statistics title={title} data={data} />
+
 
     </div>
   )

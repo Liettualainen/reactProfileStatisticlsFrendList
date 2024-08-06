@@ -1,17 +1,19 @@
 import { StatisticsItem } from './statiscticsItem'
 
-
 export const Statistics = ({ title, data }) => {
+//  const title = "UPLOAD STATS";
   return (
     <section className="statistics">
-      {title === " " ? (
-        <></>
+      { (!title) ? (
+       null
       ) : (
-        <h2 className="title">{title}</h2>
+         <h2 className="title">{title}</h2>
       )}
+
+
          <ul className="stat-list" style={{listStyleType: "none"}}>
             {data.map(data => (
-          <li>
+          <li  key={data.id}>
           <StatisticsItem data={data} />
           </li> 
       ))}

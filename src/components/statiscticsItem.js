@@ -1,6 +1,6 @@
-export const StatisticsItem = ({ data: {id, label, percentage} }) => {
+export const StatisticsItem = ({ data: {label, percentage} }) => {
     return (
-        <div className="item"  key={id}>
+        <div className="item">
             <span className="label">{label}</span>
       <span className="percentage">{percentage}</span>
         </div>
