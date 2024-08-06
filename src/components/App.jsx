@@ -2,7 +2,9 @@ import user from '../dataFiles/user.json';
 import { User } from './profile';
 import data from '../dataFiles/data.json';
 import { Statistics } from './statistics';
-// console.log(data);
+// import { StatisticsItem } from './statiscticsItem'
+
+const title = "UPLOAD STATS";
 
 const Layout = {
 marginTop: 10,
@@ -16,9 +18,8 @@ export const App = () => {
   return (
     <div style={Layout}>
       <User profile={user} />
-      <Statistics data={data} />
-      <User profile={user} />
-      <User profile={user} />
+      <Statistics data={data} title={title}/>
+
     </div>
   )
 };
