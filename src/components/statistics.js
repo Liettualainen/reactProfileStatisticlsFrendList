@@ -16,6 +16,42 @@ const profileStyle = {
   borderColor: 'green',
   backgroundColor: 'rgb(240, 241, 242)',
 }
+const Statlist = {
+  display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+  alignItems: 'center',
+  listStyleType: "none",
+  width: 650,
+  padding: 0,
+  margin: 0,
+  backgroundColor: "yellow",
+}
+const StatLi = {
+  width: '100%',
+    padding: 0,
+    border: '2px solid',
+}
+
+const Div = {
+  display: 'flex',
+
+}
+
+const title1 = {
+  marginTop: 50,
+  marginLeft: 'auto',
+  marginRight: 'auto',
+  
+}
+const TitleUpload = {
+  marginLeft: "auto",
+  marginRight: "auto",
+  margin: 33,
+       fontSize: 64,
+}
+
+
 
 export const Statistics = ({ title, data }) => {
 //  const title = "UPLOAD STATS";
@@ -23,14 +59,18 @@ export const Statistics = ({ title, data }) => {
     <section className="statistics" style={profileStyle}>
       { !title ? (
        null
-      ) : (<><FaCloudUploadAlt size="230" />
-          <h2 className="title"> {title}</h2>
-      </>
+      ) : (<div >
+          <div style={Div}>
+            <FaCloudUploadAlt style={title1} size="230" color="green" />
+          </div>
+       
+          <h2 className="title" style={TitleUpload}>{title}</h2>
+      </div>
       )}
 
-         <ul className="stat-list" style={{listStyleType: "none"}}>
+         <ul className="stat-list" style={Statlist}>
             {data.map(data => (
-          <li  key={data.id}>
+          <li  style={StatLi} key={data.id}>
           <StatisticsItem data={data} />
           </li> 
       ))}
