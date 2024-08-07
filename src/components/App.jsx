@@ -19,9 +19,7 @@ export const App = () => {
     <div style={Layout}>
       <User profile={user} />
       <Statistics title={title} data={data} />
-          <Friendlist friends={friends} />
-
-
+      <Friendlist friends={friends} />
     </div>
   )
 };
