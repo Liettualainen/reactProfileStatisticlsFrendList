@@ -1,5 +1,4 @@
-import { StatisticsItem } from './statiscticsItem'
-
+import { FriendsItem } from './friends'
 
 const profileStyle = {
   height: 650,
@@ -17,21 +16,13 @@ const profileStyle = {
   backgroundColor: 'rgb(240, 241, 242)',
 }
 
-export const Statistics = ({ title, data }) => {
-//  const title = "UPLOAD STATS";
+export const Friendlist = ({ friends }) => {
   return (
-    <section className="statistics" style={profileStyle}>
-      { (!title) ? (
-       null
-      ) : (
-         <h2 className="title">{title}</h2>
-      )}
-
-
+       <section className="statistics" style={profileStyle}>
          <ul className="stat-list" style={{listStyleType: "none"}}>
-            {data.map(data => (
-          <li  key={data.id}>
-          <StatisticsItem data={data} />
+            {friends.map(friends => (
+          <li  key={friends.id}>
+          <FriendsItem friends={friends} />
           </li> 
       ))}
           </ul>

@@ -2,8 +2,8 @@ import user from '../dataFiles/user.json';
 import { User } from './profile';
 import data from '../dataFiles/data.json';
 import { Statistics } from './statistics';
-// import { StatisticsItem } from './statiscticsItem'
-
+import friends from '../dataFiles/friends';
+import { Friendlist } from './Friendlist';
 const title = "UPLOAD STATS";
 
 const Layout = {
@@ -18,7 +18,8 @@ export const App = () => {
   return (
     <div style={Layout}>
       <User profile={user} />
-    <Statistics title={title} data={data} />
+      <Statistics title={title} data={data} />
+          <Friendlist friends={friends} />
 
 
     </div>
