@@ -4,6 +4,11 @@ import data from '../dataFiles/data.json';
 import { Statistics } from './statistics';
 import friends from '../dataFiles/friends';
 import { Friendlist } from './Friendlist';
+import transactions from '../dataFiles/transactions';
+import { TransactionList } from './transactionsList';
+
+
+
 const title = "UPLOAD STATS";
 
 const Layout = {
@@ -20,6 +25,7 @@ export const App = () => {
       <User profile={user} />
       <Statistics title={title} data={data} />
       <Friendlist friends={friends} />
+        <TransactionList transactions={transactions} />
     </div>
   )
 };

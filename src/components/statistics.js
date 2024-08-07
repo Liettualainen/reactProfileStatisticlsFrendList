@@ -1,5 +1,5 @@
 import { StatisticsItem } from './statiscticsItem'
-
+import { FaCloudUploadAlt } from "react-icons/fa";
 
 const profileStyle = {
   height: 650,
@@ -21,12 +21,12 @@ export const Statistics = ({ title, data }) => {
 //  const title = "UPLOAD STATS";
   return (
     <section className="statistics" style={profileStyle}>
-      { (!title) ? (
+      { !title ? (
        null
-      ) : (
-         <h2 className="title">{title}</h2>
+      ) : (<><FaCloudUploadAlt size="230" />
+          <h2 className="title"> {title}</h2>
+      </>
       )}
-
 
          <ul className="stat-list" style={{listStyleType: "none"}}>
             {data.map(data => (
