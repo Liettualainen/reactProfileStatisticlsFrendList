@@ -16,10 +16,14 @@ const profileStyle = {
   backgroundColor: 'rgb(240, 241, 242)',
 }
 
+const Statlist = { 
+  listStyleType: "none",
+}
+
 export const Friendlist = ({ friends }) => {
   return (
        <section className="statistics" style={profileStyle}>
-         <ul className="stat-list" style={{listStyleType: "none"}}>
+         <ul className="stat-list" style={Statlist}>
             {friends.map(friends => (
           <li  key={friends.id}>
           <FriendsItem friends={friends} />
