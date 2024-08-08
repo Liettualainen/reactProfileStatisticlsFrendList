@@ -9,16 +9,18 @@ const Statlist = {
     border: 'solid',
       borderRadius: 15,
   borderWidth: 0.1,
-    borderColor: 'red',
+    borderColor: 'grey',
     margin: 10,
     padding: 15,
+    boxShadow: '10px 5px 5px grey',
+    
 }
 const Status = {
     padding: 0,
     marginLeft: 20,
-  marginRight: 20,
+  marginRight: 40,
     marginTop: "auto",
-     marginBottom: "auto",
+    marginBottom: "auto",
    
 }
 const Name = {
@@ -43,7 +45,7 @@ export const FriendsItem = ({ friends: { avatar, name, isOnline } }) => {
     return (
         <div className="item" style={Statlist}>
             
-            <span className="status" style={Status}><SiSpringboot color="green" />{isOnline}</span>
+            <span className="status"  style={Status}><SiSpringboot color="green" size="30"/>{isOnline}</span>
   <img className="avatar"style={Img} src={avatar} alt="User avatar" width="70" height="70"/>
             <p className="name" style={Name}>{name}</p>
         </div>
