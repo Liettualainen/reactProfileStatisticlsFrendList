@@ -12,7 +12,7 @@ import { TransactionList } from './transactionsList';
 const title = "UPLOAD STATS";
 
 const Layout = {
-marginTop: 10,
+  marginBottom: 60,
   display: 'flex',
           flexDirection: 'column',
         justifyContent: 'center',

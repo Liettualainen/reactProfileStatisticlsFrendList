@@ -43,11 +43,12 @@ const Img = {
 
 export const FriendsItem = ({ friends: { avatar, name, isOnline } }) => {
     return (
-        <div className="item" style={Statlist}>
-            
-            <span className="status"  style={Status}><SiSpringboot color="green" size="30"/>{isOnline}</span>
-  <img className="avatar"style={Img} src={avatar} alt="User avatar" width="70" height="70"/>
-            <p className="name" style={Name}>{name}</p>
-        </div>
+      <div className="item" style={Statlist}>
+        <span className="status" style={Status}>
+          <SiSpringboot color={isOnline} size="30" />
+        </span>
+        <img className="avatar" style={Img} src={avatar} alt="User avatar" width="70" height="70" />
+        <p className="name" style={Name}>{name}</p>
+      </div>
     )
 };
