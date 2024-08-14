@@ -20,8 +20,7 @@ export const ProfileStyle = styled.section`
   background-color: rgb(240, 241, 242);
 `
 export const StatlistBack = styled.div`
-
-border: 3px green solid;
+margin-bottom: -4px;
 `
 export const Statlist = styled.ul`
 display: flex;
@@ -31,7 +30,6 @@ align-items: center;
 width: 630px;
 padding: 0;
 margin:0;
-background-color: green;
 `
 export const StatLi = styled.li`
   width: 100%;
