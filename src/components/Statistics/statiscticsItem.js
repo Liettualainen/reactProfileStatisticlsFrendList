@@ -1,4 +1,3 @@
-
 import { GoFile } from "react-icons/go";
 import { VscPercentage } from "react-icons/vsc";
 // import { FaPercentage } from "react-icons/fa";
@@ -22,13 +21,13 @@ const percentagestyle = {
 }
 
 
-
 export const StatisticsItem = ({ data: { label, percentage } }) => {
     return (
-        <div className="item" style={item}>
+      <div className="item" style={item} color="green" >
             <GoFile size="40" color="green"/> 
             <span className="label" >{label}</span>
-      <span className="percentage" style={percentagestyle}>{percentage} <VscPercentage /></span>
+        <span className="percentage" style={percentagestyle}>
+          {percentage}<VscPercentage /></span>
         </div>
     )
 };

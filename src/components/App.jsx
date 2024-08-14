@@ -1,32 +1,25 @@
 import user from '../dataFiles/user.json';
 import { User } from './profile';
 import data from '../dataFiles/data.json';
-import { Statistics } from './statistics';
+import { Statistics } from './Statistics/statistics';
 import friends from '../dataFiles/friends';
-import { Friendlist } from './Friendlist';
+import { Friendlist } from './Friends/Friendlist';
 import transactions from '../dataFiles/transactions';
 import { TransactionList } from './transactionsList';
-
-
+import { GlobalStyle } from './GlobalStyle';
+import { Layout } from './Layout';
 
 const title = "UPLOAD STATS";
 
-const Layout = {
-  marginBottom: 60,
-  display: 'flex',
-          flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-}
-
 export const App = () => {
   return (
-    <div style={Layout}>
+    <Layout>
+      <GlobalStyle/>
       <User profile={user} />
       <Statistics title={title} data={data} />
       <Friendlist friends={friends} />
-        <TransactionList transactions={transactions} />
-    </div>
+      <TransactionList transactions={transactions} />
+    </Layout>
   )
 };
 

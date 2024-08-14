@@ -1,4 +1,4 @@
-import { FriendsItem } from './friends'
+import { FriendsItem } from './Friends'
 
 const profileStyle = {
   height: 650,

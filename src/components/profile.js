@@ -2,6 +2,7 @@ const profileStyle = {
   height: 650,
   width: 650,
   marginTop: 60,
+  padding:0,
   display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
@@ -28,6 +29,27 @@ const profilename = {
   textAlign: "center",
 }
 
+const Stats = {
+  padding: 0,
+  margin: 0,
+  width: "100%",
+   display: "flex",
+ flexDirection: "row",
+ flexWrap: "wrap",
+justifyContent: "space-around",
+  fontSize: 20,
+  listStyleType: "none",
+  textAlign: "left",
+  border: '1px red solid',
+   borderRadius: " 0 0 10px 10px",
+  backgroundColor: "lightgrey",
+  height: "100%",
+}
+
+        
+
+
+
 export const User = ({ profile }) => {
   return (
     <div  className="profile" style={profileStyle}>
@@ -42,7 +64,7 @@ export const User = ({ profile }) => {
     <p className="tag">@{profile.tag}</p>
     <p className="location">{profile.location}</p>
   </div>
-  <ul className="stats">
+  <ul className="stats" style={Stats}>
     <li>
       <span className="label">Followers</span>
       <span className="quantity">{profile.stats.followers}</span>
