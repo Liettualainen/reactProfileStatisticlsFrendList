@@ -1,6 +1,6 @@
 import { SiSpringboot } from "react-icons/si";
 
-import { Statlist, SvgItem  } from "./Friends.styled";
+import { Statlist, SvgItem, SvgItemBack  } from "./Friends.styled";
 const Status = {
     padding: 0,
     marginLeft: 10,
@@ -24,14 +24,17 @@ const Img = {
      marginBottom: "auto",
 }
 
-export const FriendsItem = ({ friends: { avatar, name, isonline } }) => {
+export const FriendsItem = ({ friends: { avatar, name, isOnline } }) => {
     return (
       <Statlist >
         <span className="status" style={Status} >
-          <SvgItem isOnline={isonline}>
-               <SiSpringboot  size="40"/>
+          <SvgItemBack isOnline={isOnline}>
+            <SvgItem isOnline={isOnline} >
+               <SiSpringboot size="30"/>
             {/* <SiSpringboot color={isonline ? "green" : "red"} size="30" /> */}
           </SvgItem>
+          </SvgItemBack>
+         
           
         </span>
         <img className="avatar" style={Img} src={avatar} alt="User avatar" width="70" height="70" />

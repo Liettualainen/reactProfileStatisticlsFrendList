@@ -15,14 +15,24 @@ export const Statlist = styled.ul`
   box-shadow: 10px 5px 5px grey;  
 `
 export const SvgItem = styled.div`
+border: 35px transparent ;
+border-radius: 50px; 
 svg {
 color:${props => {
-  return (props.isOnline ? "green" : "red");
-}
-
-}
-} 
+  return (props.isOnline ? "yellow" : "black");
+  }}}
 `
+export const SvgItemBack = styled.div`
+border: 20px transparent solid;
+border-radius: 50px; 
+background-color:${props => {
+  return (props.isOnline ? "green" : "red");
+  }}
+`
+
+
+ 
+
 
 
 
