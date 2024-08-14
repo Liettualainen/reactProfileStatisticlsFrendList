@@ -17,7 +17,7 @@ export const Statlist = styled.ul`
 export const SvgItem = styled.div`
 svg {
 color:${props => {
-  return (props.isActive ? "green" : "red");
+  return (props.isOnline ? "green" : "red");
 }
 
 }

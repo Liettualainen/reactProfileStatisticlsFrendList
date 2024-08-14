@@ -24,13 +24,13 @@ const Img = {
      marginBottom: "auto",
 }
 
-export const FriendsItem = ({ friends: { avatar, name, isOnline } }) => {
+export const FriendsItem = ({ friends: { avatar, name, isonline } }) => {
     return (
       <Statlist >
         <span className="status" style={Status} >
-          <SvgItem isActive={isOnline}>
+          <SvgItem isOnline={isonline}>
                <SiSpringboot  size="40"/>
-            {/* <SiSpringboot color={isOnline ? "green" : "red"} size="30" /> */}
+            {/* <SiSpringboot color={isonline ? "green" : "red"} size="30" /> */}
           </SvgItem>
           
         </span>
