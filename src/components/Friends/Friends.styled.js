@@ -15,8 +15,12 @@ export const Statlist = styled.ul`
   box-shadow: 10px 5px 5px grey;  
 `
 export const SvgItem = styled.div`
-svg { 
-color:green;
+svg {
+color:${props => {
+  return (props.isActive ? "green" : "red");
+}
+
+}
 } 
 `
 
