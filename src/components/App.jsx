@@ -7,7 +7,7 @@ import { Friendlist } from './Friends/Friendlist';
 import transactions from '../dataFiles/transactions';
 import { TransactionList } from './transactionsList';
 import { GlobalStyle } from './GlobalStyle';
-import { Layout } from './Layout';
+import { Layout } from './Layout/Layout';
 
 const title = "UPLOAD STATS";
 

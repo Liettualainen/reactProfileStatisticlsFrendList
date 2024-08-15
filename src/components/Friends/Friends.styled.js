@@ -1,5 +1,20 @@
 import styled from 'styled-components';
 
+export const ProfileStyle = styled.section`
+  height: 650px;
+  width: 650px;
+  marginTop: 60px;
+  display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+  color: #010101;
+  border: solid;
+  border-width: 10px;
+  border-radius: 25px;
+  border-color: green;
+  background-color: rgb(240, 241, 242);
+`
 export const Statlist = styled.ul`
   display: flex;
   flex-direction: row;
@@ -13,6 +28,9 @@ export const Statlist = styled.ul`
   margin-bottom: 10px;
   padding: 15px;
   box-shadow: 10px 5px 5px grey;  
+`
+export const Statitem = styled.ul`
+      list-style-type: none;
 `
 export const SvgItem = styled.div`
 border: 35px transparent ;
@@ -30,32 +48,25 @@ background-color:${props => {
   }}
 `
 
-
- 
-
-
-
-
-// const Status = {
-//     padding: 0,
-//     marginLeft: 20,
-//   marginRight: 40,
-//     marginTop: "auto",
-//     marginBottom: "auto",
-   
-// }
-// const Name = {
-//     padding: 0,
-//     marginTop: "auto",
-//      marginBottom: "auto",
-//     textAlign: "center",
-//     marginLeft: "auto",
-//   marginRight:"auto",
-//     fontSize: 60,
-//     fontWeight: 600,
-//          width: '100%',
-// }
-// const Img = {
-//     marginTop: "auto",
-//      marginBottom: "auto",
-// }
+  export const Status = styled.span`
+    padding: 0;
+    margin-left: 20px;
+    margin-right: 40px;
+    margin-top: auto;
+    marginBottom: auto;
+  ` 
+export const Img = styled.img`
+    margin-top: auto;
+     margin-bottom: auto;
+`
+export const Name = styled.p `
+    padding: 0;
+    margin-top: auto;
+     margin-bottom: auto;
+    text-align: center;
+    margin-left: auto;
+  margin-right:auto;
+    font-size: 60px;
+    font-weight: 600px;
+         width: 100%;
+`
