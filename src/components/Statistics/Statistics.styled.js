@@ -8,9 +8,9 @@ export const ProfileStyle = styled.section`
   height: 650px;
   width: 650px;
   margin-top: 60px;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   color: #010101;
   border: solid;
@@ -20,7 +20,7 @@ export const ProfileStyle = styled.section`
   background-color: rgb(240, 241, 242);
 `
 export const StatlistBack = styled.div`
-margin-bottom: -4px;
+margin-bottom: 0px;
 `
 export const Statlist = styled.ul`
 display: flex;
@@ -33,11 +33,44 @@ margin:0;
 `
 export const StatLi = styled.li`
   width: 100%;
-  padding: 0;
+  padding-top: 40px;
+  padding-bottom: 33px;
   margin: 0;
   list-style-type: none;
   background-color: ${() => { return getRandomHexColor() }};
 `
+  export const Item = styled.div`
+  display: flex;
+    flex-direction: column;
+  align-items: center;
+    list-style-type: none;
+    font-size: 24px;
+    font-weight: 700px;
+    height: 100%;;
+`
+export const Labelstyle = styled.span`
+    margin-top: 10px;
+     font-size: 34px;
+    font-weight: 700px;
+`
+export const Percentagestyle = styled.span`
+    padding-top: 20px;
+     font-size: 34px;
+    font-weight: 700px;
+`
 
+
+export const Title = styled.div`
+margin-top: 29px;
+  margin-left: auto;
+  margin-right: auto; 
+`
+
+
+export const TitleUpload = styled.h2`
+margin-left: auto;
+  margin-right: auto;
+  margin: 33px;
+       font-size: 64px;`
 
 

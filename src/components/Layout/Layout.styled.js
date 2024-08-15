@@ -9,6 +9,7 @@ padding: 16px;
 export const Main = styled.div`
 margin-left: "auto";
 margin-right:"auto";
+margin:0;
 padding: 0;
  display: flex;
  flex-direction: row;
