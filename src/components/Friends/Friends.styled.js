@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const ProfileStyle = styled.section`
   height: 650px;
   width: 650px;
-  marginTop: 60px;
+  margin-top: 60px;
   display: flex;
         flex-direction: column;
         justify-content: center;
@@ -47,7 +47,6 @@ background-color:${props => {
   return (props.isOnline ? "green" : "red");
   }}
 `
-
   export const Status = styled.span`
     padding: 0;
     margin-left: 20px;
