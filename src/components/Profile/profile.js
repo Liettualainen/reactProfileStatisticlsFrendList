@@ -1,5 +1,5 @@
 const profileStyle = {
-  height: 650,
+  height: 1000,
   width: 650,
   marginTop: 60,
   padding:0,
@@ -52,7 +52,8 @@ justifyContent: "space-around",
 
 export const User = ({ profile }) => {
   return (
-    <div  className="profile" style={profileStyle}>
+    <div className="profile" style={profileStyle}>
+       <h2>PROFILE</h2>
   <div className="description">
     <img
           src={profile.avatar}

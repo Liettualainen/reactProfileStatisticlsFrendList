@@ -6,7 +6,8 @@ import {Item, Percentagestyle, Labelstyle } from "./Statistics.styled"
 
 
 export const StatisticsItem = ({ data: { label, percentage } }) => {
-    return (
+  return (
+      
       <Item>
             <GoFile size="50" color="yellow"/> 
             <Labelstyle>{label}</Labelstyle>

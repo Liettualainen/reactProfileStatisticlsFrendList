@@ -5,7 +5,7 @@ function getRandomHexColor() {
 }
 
 export const ProfileStyle = styled.section`
-  height: 650px;
+  height: 1000px;
   width: 650px;
   margin-top: 60px;
   padding: 0;
@@ -20,6 +20,7 @@ export const ProfileStyle = styled.section`
   background-color: rgb(240, 241, 242);
 `
 export const StatlistBack = styled.div`
+
 margin-bottom: 0px;
 `
 export const Statlist = styled.ul`
@@ -29,7 +30,7 @@ justify-content: space-around;
 align-items: center;
 width: 630px;
 padding: 0;
-margin:0;
+margin-top: 100px;
 `
 export const StatLi = styled.li`
   width: 100%;
@@ -70,7 +71,7 @@ margin-top: 29px;
 export const TitleUpload = styled.h2`
 margin-left: auto;
   margin-right: auto;
-  margin: 33px;
+  margin-top: 100px;
        font-size: 64px;`
 
 

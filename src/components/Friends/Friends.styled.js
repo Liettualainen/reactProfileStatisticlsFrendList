@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ProfileStyle = styled.section`
-  height: 650px;
+  height: 1000px;
   width: 650px;
   margin-top: 60px;
   display: flex;

@@ -5,6 +5,7 @@ import { Statlist, SvgItem, SvgItemBack, Status, Img, Name } from "./Friends.sty
 export const FriendsItem = ({ friends: { avatar, name, isOnline } }) => {
     return (
       <Statlist >
+        
         <Status>
           <SvgItemBack isOnline={isOnline}>
             <SvgItem isOnline={isOnline} >

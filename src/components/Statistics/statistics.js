@@ -8,9 +8,11 @@ import {
 export const Statistics = ({ title, data }) => {
   return (
     <ProfileStyle>
+             
       { !title ? (
        null
-      ) : (<Title>    
+      ) : (<Title>
+        <h2>STATISTICS</h2>
             <FaCloudUploadAlt size="230" color="green" />
           <TitleUpload>{title}</TitleUpload>
       </Title>
