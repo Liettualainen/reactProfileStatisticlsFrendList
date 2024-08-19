@@ -14,11 +14,11 @@ export const TransactionList = ({ transactions }) => {
     </HaderItems>
   </HaderColumn>
     <MainItems>
-        {transactions.map(transactions => (
+        {transactions.map(transactions => 
              <MainItem key={transactions.id}>
              <TransactionItem transactions={transactions} />
            </MainItem>
-      ))}
+      )}
   </MainItems>
 </ProfileStyle>
   );
