@@ -46,10 +46,6 @@ justifyContent: "space-around",
   height: "100%",
 }
 
-        
-
-
-
 export const User = ({ profile }) => {
   return (
     <div className="profile" style={profileStyle}>
