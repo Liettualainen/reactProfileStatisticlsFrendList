@@ -1,67 +1,21 @@
-const profileStyle = {
-  height: 1000,
-  width: 650,
-  marginTop: 60,
-  padding:0,
-  display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-  color: '#010101',
-  border: 'solid',
-  borderWidth: 10,
-  borderRadius: 25,
-  borderColor: 'green',
-  backgroundColor: 'rgb(240, 241, 242)',
-}
-const avatar = {
-  marginTop: 50,
-  width: 280,
-  borderRadius: '50%',
-  // border: 'solid',
-  // borderWidth: 0.1,
-    //  borderColor: 'red',
-     backgroundColor: 'rgb(209, 245, 196)',
-}
 
-const profilename = {
-  fontSize: 26,
-  textAlign: "center",
-}
-
-const Stats = {
-  padding: 0,
-  margin: 0,
-  width: "100%",
-   display: "flex",
- flexDirection: "row",
- flexWrap: "wrap",
-justifyContent: "space-around",
-  fontSize: 20,
-  listStyleType: "none",
-  textAlign: "left",
-  border: '1px red solid',
-   borderRadius: " 0 0 10px 10px",
-  backgroundColor: "lightgrey",
-  height: "100%",
-}
+import { ProfileStyle, Avatar, Profilename, Profiletaglocation, Stats} from "./UserProfile.styled";
 
 export const User = ({ user }) => {
   return (
-    <div className="profile" style={profileStyle}>
+    <ProfileStyle>
        <h2>PROFILE</h2>
   <div className="description">
-    <img
+    <Avatar
           src={user.avatar}
           alt={user.username}
-          style={avatar}
           width='340'
     />
-    <p className="name" style={profilename}><b>{user.username}</b></p>
-    <p className="tag">@{user.tag}</p>
-    <p className="location">{user.location}</p>
+    <Profilename><b>{user.username}</b></Profilename>
+    <Profiletaglocation>@{user.tag}</Profiletaglocation>
+    <Profiletaglocation>{user.location}</Profiletaglocation>
   </div>
-  <ul className="stats" style={Stats}>
+  <Stats>
     <li>
       <span className="label">Followers</span>
       <span className="quantity">{user.stats.followers}</span>
@@ -74,7 +28,7 @@ export const User = ({ user }) => {
       <span className="label">Likes</span>
       <span className="quantity">{user.stats.likes }</span>
     </li>
-  </ul>
-</div>
+  </Stats>
+</ProfileStyle>
   );
 };
