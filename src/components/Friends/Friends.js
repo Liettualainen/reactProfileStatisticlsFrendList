@@ -1,6 +1,6 @@
 import { SiSpringboot } from "react-icons/si";
 
-import { Statlist, SvgItem, SvgItemBack, Status, Img, Name } from "./Friends.styled";
+import { Statlist, Status, Img, Name } from "./Friends.styled";
 
 export const FriendsItem = ({ friends: { avatar, name, isOnline } }) => {
     return (
