@@ -46,33 +46,33 @@ justifyContent: "space-around",
   height: "100%",
 }
 
-export const User = ({ profile }) => {
+export const User = ({ user }) => {
   return (
     <div className="profile" style={profileStyle}>
        <h2>PROFILE</h2>
   <div className="description">
     <img
-          src={profile.avatar}
-          alt={profile.username}
+          src={user.avatar}
+          alt={user.username}
           style={avatar}
           width='340'
     />
-    <p className="name" style={profilename}><b>{profile.username}</b></p>
-    <p className="tag">@{profile.tag}</p>
-    <p className="location">{profile.location}</p>
+    <p className="name" style={profilename}><b>{user.username}</b></p>
+    <p className="tag">@{user.tag}</p>
+    <p className="location">{user.location}</p>
   </div>
   <ul className="stats" style={Stats}>
     <li>
       <span className="label">Followers</span>
-      <span className="quantity">{profile.stats.followers}</span>
+      <span className="quantity">{user.stats.followers}</span>
     </li>
     <li>
       <span className="label">Views</span>
-      <span className="quantity">{profile.stats.views}</span>
+      <span className="quantity">{user.stats.views}</span>
     </li>
     <li>
       <span className="label">Likes</span>
-      <span className="quantity">{profile.stats.likes }</span>
+      <span className="quantity">{user.stats.likes }</span>
     </li>
   </ul>
 </div>
