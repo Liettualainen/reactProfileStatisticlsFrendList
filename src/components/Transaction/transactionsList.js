@@ -5,8 +5,9 @@ import { ProfileStyle, HaderColumn, HaderItems,HaderItem, MainItems, MainItem} f
 export const TransactionList = ({ transactions }) => {
   return (
     <ProfileStyle>
+      <h2>TRANSACTIONS HISTORY</h2>
+      <table>     
       <HaderColumn>
-        <h2>TRANSACTIONS HISTORY</h2>
     <HaderItems>
       <HaderItem>Type</HaderItem>
       <HaderItem>Amount</HaderItem>
@@ -20,6 +21,8 @@ export const TransactionList = ({ transactions }) => {
            </MainItem>
       )}
   </MainItems>
+      </table>
+   
 </ProfileStyle>
   );
 };

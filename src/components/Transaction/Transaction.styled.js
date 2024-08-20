@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ProfileStyle = styled.table`
+export const ProfileStyle = styled.div`
   height: 1000px;
   width: 650px;
   margin-top: 60px;
@@ -31,7 +31,7 @@ tr:nth-child(even) {
   background-color: rgba(206,206,206);
 }
   tr:nth-child(odd) {
-  background-color: rgba(350,350,350);
+  background-color: rgba(350,350,300);
 }
 `
 export const ItemShape = styled.td`

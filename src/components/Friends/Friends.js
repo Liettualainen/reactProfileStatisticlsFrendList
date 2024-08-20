@@ -7,8 +7,8 @@ export const FriendsItem = ({ friends: { avatar, name, isOnline } }) => {
       <Statlist >
         
         <Status>
-          <SvgItemBack isOnline={isOnline}>
-            <SvgItem isOnline={isOnline} >
+          <SvgItemBack isonline={isOnline}>
+            <SvgItem isonline={isOnline} >
                <SiSpringboot size="30"/>
             {/* <SiSpringboot color={isonline ? "green" : "red"} size="30" /> */}
           </SvgItem>
