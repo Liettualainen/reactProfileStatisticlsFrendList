@@ -2,17 +2,17 @@ import { Layout } from './Layout/Layout';
 import { GlobalStyle } from './GlobalStyle';
 // import user from '../dataFiles/user.json';
 // import data from '../dataFiles/data.json';
-import friends from '../dataFiles/friends';
+// import friends from '../dataFiles/friends';
 import transactions from '../dataFiles/transactions';
 
 // import { User } from './Profile/UserProfile';
-import { Statistics } from './Statistics/statistics';
-import { Friendlist } from './Friends/Friendlist';
+// import { Statistics } from './Statistics/statistics';
+// import { Friendlist } from './Friends/Friendlist';
 import { TransactionList } from './Transaction/transactionsList';
 
 
 
-const title = "UPLOAD STATS";
+// const title = "UPLOAD STATS";
 
 export const App = () => {
   return (
@@ -20,7 +20,7 @@ export const App = () => {
       <GlobalStyle/>
       {/* <User user={user} /> */}
       {/* <Statistics title={title} data={data} /> */}
-      <Friendlist friends={friends} />
+      {/* <Friendlist friends={friends} /> */}
       <TransactionList transactions={transactions} />
     </Layout>
   )
