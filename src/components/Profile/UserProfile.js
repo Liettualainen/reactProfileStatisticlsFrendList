@@ -1,5 +1,5 @@
 
-import { ProfileStyle, Avatar, Profilename, Profiletaglocation, Stats} from "./UserProfile.styled";
+import { ProfileStyle, Avatar, Profilename, Profiletaglocation, Stats, Li, Label,Quantity} from "./UserProfile.styled";
 
 export const User = ({ user }) => {
   return (
@@ -16,18 +16,18 @@ export const User = ({ user }) => {
     <Profiletaglocation>{user.location}</Profiletaglocation>
   </div>
   <Stats>
-    <li>
-      <span className="label">Followers</span>
-      <span className="quantity">{user.stats.followers}</span>
-    </li>
-    <li>
-      <span className="label">Views</span>
-      <span className="quantity">{user.stats.views}</span>
-    </li>
-    <li>
-      <span className="label">Likes</span>
-      <span className="quantity">{user.stats.likes }</span>
-    </li>
+    <Li>
+      <Label>Followers</Label>
+          <Quantity>{Intl.NumberFormat().format(user.stats.followers)}</Quantity>
+    </Li>
+    <Li>
+      <Label>Views</Label>
+      <Quantity>{Intl.NumberFormat().format(user.stats.views)}</Quantity>
+    </Li>
+    <Li>
+      <Label>Likes</Label>
+      <Quantity>{Intl.NumberFormat().format(user.stats.likes)} </Quantity>
+    </Li>
   </Stats>
 </ProfileStyle>
   );

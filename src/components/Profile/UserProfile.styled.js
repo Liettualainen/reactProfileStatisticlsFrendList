@@ -15,16 +15,14 @@ export const ProfileStyle = styled.div`
   border-color: green;
   background-color: rgb(240, 241, 242);
 `
-
 export const Avatar = styled.img` 
     margin-top: 50px;
         margin-bottom: 30px;
-  width: 280px;
+        padding: 15px;
+  width: 300px;
   border-radius: 50%;
-  border: solid;
-  border-width: 1px;
-     border-color: red;
-     backgroundColor: 'rgb(209, 245, 196)';
+  border: 1px solid #ddd;
+}
 `
 
 export const Profilename = styled.p`
@@ -38,21 +36,35 @@ export const Profiletaglocation = styled.p`
   color: grey;
 `
 
-
-
 export const Stats = styled.ul`
-  padding: 0px;
-  margin: 0px;
-  width: 100%;
    display: flex;
- flex-direction: row;
+ flex-direction: column;
  flex-wrap: wrap;
-justify-content: space-around;
+ justify-content: space-around;
+  margin: 0px;
+  padding: 0px;
   font-size: 20px;
-  list-style-type: none;
-  text-align: left;
-  border: 1px red solid;
-   border-radius:  0 0 10px 10px;
-  background-color: lightgrey;
+list-style-type: none;
+  background-color: rgb(231, 239, 249);
+//   border: 1px solid grey;
+
+`
+export const Li = styled.li`
+   display: flex;
+ flex-direction: column;
+  justify-content: center;
+  align-items: center;
+width: 210px;
   height: 100%;
+   border: 1px solid grey;
+`
+
+export const Label = styled.span`
+  font-size: 30px;
+ 	height: 20%;
+`
+export const Quantity = styled.span`
+  font-size: 40px;
+  font-weight: 700;
+
 `
