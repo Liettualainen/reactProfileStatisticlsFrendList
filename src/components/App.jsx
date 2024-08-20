@@ -12,7 +12,7 @@ import { TransactionList } from './Transaction/transactionsList';
 
 
 
-// const title = "UPLOAD STATS";
+const title = "UPLOAD STATS";
 
 export const App = () => {
   return (
