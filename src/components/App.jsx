@@ -1,13 +1,13 @@
 import { Layout } from './Layout/Layout';
 import { GlobalStyle } from './GlobalStyle';
-// import user from '../dataFiles/user.json';
-// import data from '../dataFiles/data.json';
-// import friends from '../dataFiles/friends';
+import user from './dataFiles/user.json';
+import data from './dataFiles/data.json';
+import friends from './dataFiles/friends';
 import transactions from './dataFiles/transactions.json';
 
-// import { User } from './Profile/UserProfile';
-// import { Statistics } from './Statistics/statistics';
-// import { Friendlist } from './Friends/Friendlist';
+import { User } from './Profile/UserProfile';
+import { Statistics } from './Statistics/statistics';
+import { Friendlist } from './Friends/Friendlist';
 import { TransactionList } from './Transaction/transactionsList';
 
 
@@ -18,9 +18,9 @@ export const App = () => {
   return (
     <Layout>
       <GlobalStyle/>
-      {/* <User user={user} /> */}
-      {/* <Statistics title={title} data={data} /> */}
-      {/* <Friendlist friends={friends} /> */}
+      <User user={user} />
+      <Statistics title={title} data={data} />
+      <Friendlist friends={friends} />
       <TransactionList transactions={transactions} />
     </Layout>
   )
