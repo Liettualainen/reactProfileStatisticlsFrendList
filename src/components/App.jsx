@@ -1,13 +1,15 @@
+import { Layout } from './Layout/Layout';
+import { GlobalStyle } from './GlobalStyle';
 import user from '../dataFiles/user.json';
-import { User } from './Profile/profile';
+import { User } from './Profile/UserProfile';
 import data from '../dataFiles/data.json';
 import { Statistics } from './Statistics/statistics';
 import friends from '../dataFiles/friends';
 import { Friendlist } from './Friends/Friendlist';
 import transactions from '../dataFiles/transactions';
 import { TransactionList } from './Transaction/transactionsList';
-import { GlobalStyle } from './GlobalStyle';
-import { Layout } from './Layout/Layout';
+
+
 
 const title = "UPLOAD STATS";
 
