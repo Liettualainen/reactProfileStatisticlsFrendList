@@ -1,7 +1,7 @@
 import { Layout } from './Layout/Layout';
 import { GlobalStyle } from './GlobalStyle';
 import user from '../dataFiles/user.json';
-import { User } from './Profile/UserProfile';
+// import { User } from './Profile/UserProfile';
 import data from '../dataFiles/data.json';
 import { Statistics } from './Statistics/statistics';
 import friends from '../dataFiles/friends';
@@ -17,7 +17,7 @@ export const App = () => {
   return (
     <Layout>
       <GlobalStyle/>
-      <User user={user} />
+      {/* <User user={user} /> */}
       <Statistics title={title} data={data} />
       <Friendlist friends={friends} />
       <TransactionList transactions={transactions} />
