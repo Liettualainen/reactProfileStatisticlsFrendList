@@ -36,18 +36,20 @@ export const SvgItem = styled.div`
 border: 35px transparent ;
 border-radius: 50px; 
 svg {
-color:${props => {
-  return (props.isonline ? "yellow" : "black");
-  }}}
+color:
+${p => {
+  return (p.isactive) ? 'yellow' : 'black';
+  }};
 `
 export const SvgItemBack = styled.div`
 border: 20px transparent solid;
 border-radius: 50px; 
-background-color:${props => {
-  return (props.isonline ? "green" : "red");
+background-color:
+${p => {
+            return (p.isactive) ? 'green' : 'red';
   }}
 `
-  export const Status = styled.span`
+  export const Status = styled.div`
     padding: 0;
     margin-left: 20px;
     margin-right: 40px;
