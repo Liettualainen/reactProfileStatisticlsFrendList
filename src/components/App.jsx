@@ -1,12 +1,13 @@
 import { Layout } from './Layout/Layout';
 import { GlobalStyle } from './GlobalStyle';
 // import user from '../dataFiles/user.json';
-// import { User } from './Profile/UserProfile';
 import data from '../dataFiles/data.json';
-import { Statistics } from './Statistics/statistics';
 import friends from '../dataFiles/friends';
-import { Friendlist } from './Friends/Friendlist';
 import transactions from '../dataFiles/transactions';
+
+// import { User } from './Profile/UserProfile';
+import { Statistics } from './Statistics/statistics';
+import { Friendlist } from './Friends/Friendlist';
 import { TransactionList } from './Transaction/transactionsList';
 
 
