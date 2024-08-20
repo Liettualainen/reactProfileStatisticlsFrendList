@@ -1,6 +1,6 @@
 import { Layout } from './Layout/Layout';
 import { GlobalStyle } from './GlobalStyle';
-import user from '../dataFiles/user.json';
+// import user from '../dataFiles/user.json';
 // import { User } from './Profile/UserProfile';
 import data from '../dataFiles/data.json';
 import { Statistics } from './Statistics/statistics';
